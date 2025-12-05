@@ -1,0 +1,13 @@
+# FastAPI endpoints.
+
+# Documentación de SWAGGER.
+GET http://127.0.0.1:8000/docs
+Accept: application/json
+
+###
+
+# Hello World.
+GET http://127.0.0.1:8000
+Accept: application/json
+
+###
