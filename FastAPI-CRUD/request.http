@@ -1,13 +1,43 @@
 # FastAPI endpoints.
 
-# Documentación de SWAGGER.
-GET http://127.0.0.1:8000/docs
+# ------------------------------------------------
+
+# Variable para la base de la URL.
+@base_url = http://127.0.0.1:8000
+
+# ------------------------------------------------
+
+### Documentación de SWAGGER.
+
+GET {{base_url}}/docs
 Accept: application/json
 
-###
+### Hello World.
 
-# Hello World.
-GET http://127.0.0.1:8000
+GET {{base_url}}
 Accept: application/json
+
+### Obtiene una lista de usuarios.
+
+GET {{base_url}}/api/v1/users
+Accept: application/json
+
+### Obtiene un usuario por ID.
+
+GET {{base_url}}/api/v1/user/6008d9ca-f63e-47f0-b75e-8699105c222c
+Accept: application/json
+
+### Crea un nuevo usuario.
+
+POST {{base_url}}/api/v1/users
+Content-Type: application/json
+
+{
+    "first_name": "NATALIA",
+    "last_name": "GANGA",
+    "nickname": "Estilosa78",
+    "gender": "FEMALE",
+    "roles": ["ADMIN", "EDITOR"]
+}
 
 ###

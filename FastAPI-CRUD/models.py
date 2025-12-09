@@ -26,4 +26,5 @@ class UserUpdateRequest(BaseModel):
     first_name: Optional[str] = None
     last_name: Optional[str] = None
     nickname: Optional[str] = None
+    roles: Optional[List[Role]] = None
 
