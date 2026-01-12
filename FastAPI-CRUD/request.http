@@ -40,4 +40,19 @@ Content-Type: application/json
     "roles": ["ADMIN", "EDITOR"]
 }
 
+### Elimina un usuario por ID.
+
+DELETE {{base_url}}/api/v1/user/6008d9ca-f63e-47f0-b75e-8699105c222c
+Accept: application/json
+
+### Edita un usuario por ID.
+
+PATCH {{base_url}}/api/v1/user/6008d9ca-f63e-47f0-b75e-8699105c222c
+Content-Type: application/json
+
+{
+    "first_name": "CARLOS ANTONIO",
+    "nickname": "AntonioAlcobas"
+}
+
 ###
